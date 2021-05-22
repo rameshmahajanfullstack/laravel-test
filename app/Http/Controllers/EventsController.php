@@ -100,7 +100,6 @@ class EventsController extends BaseController
 
         //event query for fetching all events
         $events = Event::with('workshops')->get();
-    
 
         return response()->json($events, 200);
     }
